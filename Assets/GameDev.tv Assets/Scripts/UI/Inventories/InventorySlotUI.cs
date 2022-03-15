@@ -24,10 +24,12 @@ namespace GameDevTV.UI.Inventories
         public void AddItems(Sprite item, int number)
         {
             icon.SetItem(item);
+            print("AddItems, icon.SetItem");
         }
 
         public Sprite GetItem()
         {
+            print(gameObject + " GetItem " + icon.GetItem());
             return icon.GetItem();
         }
 
