@@ -136,6 +136,9 @@ namespace GameDevTV.Inventories
         private void Awake()
         {
             slots = new InventoryItem[inventorySize];
+            InventoryItem itemToSpawn = InventoryItem.GetFromID("81317caa-0163-4309-a429-9ef5b8235678");
+            itemToSpawn.SpawnPickup(this.transform.position);
+            //spawnedPickup.transform.SetParent(transform);
         }
 
         /// <summary>
