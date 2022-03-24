@@ -101,7 +101,6 @@ namespace GameDevTV.Inventories
         /// </summary>
         public void RemoveFromSlot(int slot)
         {
-            print(slots[slot] + " Removed");
             slots[slot] = null;
             if (inventoryUpdated != null)
             {
@@ -121,12 +120,10 @@ namespace GameDevTV.Inventories
         {
             if (slots[slot] != null)
             {
-                print(slots[slot] + " is not empty , add that item to first empty slot");
-                return AddToFirstEmptySlot(item);
+                return AddToFirstEmptySlot(item); ;
             }
 
             slots[slot] = item;
-            print(slots[slot] + " changed to new item" + item);
             if (inventoryUpdated != null)
             {
                 inventoryUpdated();
@@ -139,9 +136,6 @@ namespace GameDevTV.Inventories
         private void Awake()
         {
             slots = new InventoryItem[inventorySize];
-            slots[0] = InventoryItem.GetFromID("71e73607-4bac-4e42-b7d6-5e6f91e92dc4");
-            slots[1] = InventoryItem.GetFromID("0aa7c8b8-4796-42aa-89d0-9d100ea67d7b");
-            slots[2] = InventoryItem.GetFromID("81317caa-0163-4309-a429-9ef5b8235678");
         }
 
         /// <summary>
