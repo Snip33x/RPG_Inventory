@@ -18,7 +18,7 @@ namespace InventoryExample.Control
 
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
-        [SerializeField] float raycastRadius = 0.1f;
+        [SerializeField] float raycastRadius = 1f;
 
         bool movementStarted = false;
 
