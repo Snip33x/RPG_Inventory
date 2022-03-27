@@ -15,6 +15,14 @@ namespace GameDevTV.Inventories
 
         // PUBLIC
 
+        private void Update()
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                DropItem(InventoryItem.GetFromID("81317caa-0163-4309-a429-9ef5b8235678"));
+            }
+        }
+
         /// <summary>
         /// Create a pickup at the current position.
         /// </summary>
