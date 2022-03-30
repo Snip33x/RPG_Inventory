@@ -211,7 +211,7 @@ namespace GameDevTV.Inventories
 
             for (int i = 0; i < slots.Length; i++)
             {
-                if (object.ReferenceEquals(slots[i].item, item))
+                if (object.ReferenceEquals(slots[i].item, item))  //they are exact same object
                 {
                     return i;
                 }
