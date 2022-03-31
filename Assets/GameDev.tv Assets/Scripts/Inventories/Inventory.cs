@@ -220,7 +220,7 @@ namespace GameDevTV.Inventories
         }
 
         [System.Serializable]
-        private struct InventorySlotRecord
+        private struct InventorySlotRecord // this is not an inventory item, but just string
         {
             public string itemID;
             public int number;
@@ -228,7 +228,7 @@ namespace GameDevTV.Inventories
     
         object ISaveable.CaptureState()
         {
-            var slotStrings = new InventorySlotRecord[inventorySize];
+            var slotStrings = new InventorySlotRecord[inventorySize]; //
             for (int i = 0; i < inventorySize; i++)
             {
                 if (slots[i].item != null)
