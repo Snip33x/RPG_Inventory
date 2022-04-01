@@ -211,7 +211,7 @@ namespace GameDevTV.Inventories
 
             for (int i = 0; i < slots.Length; i++)
             {
-                if (object.ReferenceEquals(slots[i].item, item))  //they are exact same object
+                if (object.ReferenceEquals(slots[i].item, item))
                 {
                     return i;
                 }
@@ -220,7 +220,7 @@ namespace GameDevTV.Inventories
         }
 
         [System.Serializable]
-        private struct InventorySlotRecord // this is not an inventory item, but just string
+        private struct InventorySlotRecord
         {
             public string itemID;
             public int number;
@@ -228,7 +228,7 @@ namespace GameDevTV.Inventories
     
         object ISaveable.CaptureState()
         {
-            var slotStrings = new InventorySlotRecord[inventorySize]; //
+            var slotStrings = new InventorySlotRecord[inventorySize];
             for (int i = 0; i < inventorySize; i++)
             {
                 if (slots[i].item != null)
