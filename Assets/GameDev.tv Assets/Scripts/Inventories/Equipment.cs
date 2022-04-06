@@ -87,7 +87,7 @@ namespace GameDevTV.Inventories
                 var item = (EquipableItem)InventoryItem.GetFromID(pair.Value);
                 if (item != null)
                 {
-                    equippedItems[pair.Key] = item;// 
+                    equippedItems[pair.Key] = item;
                 }
             }
         }

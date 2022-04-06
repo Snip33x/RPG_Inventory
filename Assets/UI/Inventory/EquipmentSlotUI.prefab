@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3634554955836656242}
   - component: {fileID: 3637638638000879444}
   - component: {fileID: 3528661190285955132}
-  - component: {fileID: 4287846757939473878}
+  - component: {fileID: 5391756194287133340}
+  - component: {fileID: 6388643105189802647}
   m_Layer: 5
   m_Name: EquipmentSlotUI
   m_TagString: Untagged
@@ -62,8 +63,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -77,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4287846757939473878
+--- !u!114 &5391756194287133340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,12 +85,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 3561121645966637724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212bb0c26af8e6b4ca686028cee5b4b3, type: 3}
+  m_Script: {fileID: 11500000, guid: c58a7a667728d0342a09593ddb800bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 7308001084569389129}
-  equipLocation: 5
-  klus: 5
+  equipLocation: 0
+--- !u!114 &6388643105189802647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3561121645966637724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc4daf13a8e5d04a9dfefec08811e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipPrefab: {fileID: 6796662661069912602, guid: 9ae64e5bbc82aa44fa6f44bf445d382a,
+    type: 3}
 --- !u!1 &9062860880096009178
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,8 +167,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
